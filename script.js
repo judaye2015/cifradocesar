@@ -15,7 +15,7 @@ function inicio()
 		{
 			alert("La clave debe ser mayor a 0. ");
 		}
-		else{
+		
 		
 		if(descifrar==true)
 		{
@@ -61,7 +61,7 @@ function inicio()
 		
 		nom_div("tabla").innerHTML = realizaCesar(texto, clave);
 		}
-		}
+		
 	}
 	
 	function realizaCesar(texto, clave)
