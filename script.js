@@ -47,12 +47,12 @@ function inicio()
 				text_cifrado += alfabeto[c];
 				ban=1;
 				}
-				c=0;
 			}
 				if(ban==0){
 					text_cifrado += texto.charAt(i);
 				}
 				ban=0;
+				c=0;
 		}
 		nom_div("tabla").innerHTML = text_cifrado;
 		}
