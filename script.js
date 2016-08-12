@@ -11,9 +11,9 @@ function inicio()
 		var NumeroText  = nom_div("caja_2").value;
 		var clave = Number(NumeroText);
 		var texto = nom_div("caja_1").value;
-		if (NumeroText < 0 || NumeroText >= 100)
+		if (NumeroText < 0 )
 		{
-			alert("La clave debe estar entre 0 y 100. ");
+			alert("La clave debe ser mayor a 0. ");
 		}
 		
 		if(descifrar==true)
