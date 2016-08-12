@@ -18,7 +18,8 @@ function inicio()
 		
 		if(descifrar==true)
 		{
-				var alfabeto=["Á","É","Í","Ó","Ú","á","é","í","ó","ú",
+			
+			    var alfabeto=["Á","É","Í","Ó","Ú","á","é","í","ó","ú",
 					  "A","B","C","D","E","F","G","H","I","J",
 					  "K","L","M","N","Ñ","O","P","Q","R","S",
 					  "T","U","V","W","X","Y","Z","0","1","2",
@@ -36,11 +37,17 @@ function inicio()
 		{
 			for(var j = 0; j < alfabeto.length; j++){
 				
-			if(texto.charAt(i)==alfabeto[j]){
-				c=(j-clave)%n;
+				if(texto.charAt(i)==alfabeto[j]){
+				
+				
+					c=(j-clave)%n;
+					if(c<0){
+						c=c+86;
+					}
 				text_cifrado += alfabeto[c];
 				ban=1;
 				}
+				c=0;
 			}
 				if(ban==0){
 					text_cifrado += texto.charAt(i);
